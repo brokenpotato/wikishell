@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+    <title>{% block title %}{% end %} - {{escape(handler.settings['site_title'])}}
+    </title>
+    <link rel="stylesheet" type="text/css" href="{{static_url('css/style.css')}}" />
+    {% block head %}{% end %}
+</head>
+<body>
+    <div id="header">
+        {% block header %}{% end %}
+    </div>
+    <div id="body">
+        {% block body %}
+        <div id="leftbody">
+            {% block leftbody %}
+            {% end %}
+        </div>
+        <div id="centerbody">
+            {% block centerbody %}
+            {% end %}
+        </div>
+        <div id="rightbody">
+            {% block rightbody %}
+            {% end %}
+        </div>
+        {% end %}
+    </div>
+    <div id="footer">
+        {% block footer %}{% end %}
+    </div>
+</div>
+</html>
+    

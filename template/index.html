@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}首页{% end %}
+{% block centerbody %}
+<div id=wrapper>
+    <div id="content">
+        <div id="m">
+            <div id="form">
+                <form name="f" action="/s">
+                    <span class="s_ipt_span">
+                        <input type="text" name="wd" id="kw" maxlength="100" class="s_ipt" autocomplete="off">
+                    </span>
+                    <span class="s_btn_span">
+                        <input type="submit" value="Search" id="su" class="s_btn" >
+                    </span>
+            </div>
+        </div>
+    </div>
+</div>
+{% end %}   
